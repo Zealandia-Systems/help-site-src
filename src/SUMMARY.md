@@ -2,6 +2,8 @@
 
 [Introduction](README.md)
 
-# User Guide
+# Getting Started
 
 - [Installation](installation.md)
+- [User Interface](UserInterface.md)
+- [Machine Startup](MachineStart.md)
