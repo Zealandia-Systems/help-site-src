@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Getting Started</li><li class="chapter-item expanded "><a href="installation.html"><strong aria-hidden="true">1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="UserInterface.html"><strong aria-hidden="true">2.</strong> User Interface</a></li><li class="chapter-item expanded "><a href="MachineStart.html" class="active"><strong aria-hidden="true">3.</strong> Machine Startup</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Getting Started</li><li class="chapter-item expanded "><a href="Installation.html"><strong aria-hidden="true">1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="UserInterface.html"><strong aria-hidden="true">2.</strong> User Interface</a></li><li class="chapter-item expanded "><a href="MachineStart.html" class="active"><strong aria-hidden="true">3.</strong> Machine Startup</a></li><li class="chapter-item expanded "><a href="MachineRun.html"><strong aria-hidden="true">4.</strong> Machine Run</a></li><li class="chapter-item expanded "><a href="GcodeRun.html"><strong aria-hidden="true">5.</strong> Running Gcode</a></li><li class="chapter-item expanded affix "><li class="part-title">User Guide</li><li class="chapter-item expanded "><a href="Workspace.html"><strong aria-hidden="true">6.</strong> Workspace</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Console.html"><strong aria-hidden="true">6.1.</strong> Console</a></li><li class="chapter-item expanded "><a href="Setting.html"><strong aria-hidden="true">6.2.</strong> Settings</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">6.2.1.</strong> Coordinate Systems</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.2.2.</strong> Tools</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.2.3.</strong> Event</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.3.</strong> Gcode Viewer</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.4.</strong> Laser Widget</div></li><li class="chapter-item expanded "><a href="ProbeWidget.html"><strong aria-hidden="true">6.5.</strong> Probe Widget</a></li><li class="chapter-item expanded "><a href="SpindleWidget.html"><strong aria-hidden="true">6.6.</strong> Spindle Widget</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.7.</strong> Macros</div></li></ol></li><li class="chapter-item expanded "><li class="part-title">Advanced Functions</li><li class="chapter-item expanded "><a href="GcodeCommands.html"><strong aria-hidden="true">7.</strong> Gcode Commands</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> Touch Probe</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> Automatic Tool Changer Operation</div></li><li class="chapter-item expanded "><a href="ConfigSet.html"><strong aria-hidden="true">10.</strong> Configuration Settings</a></li><li class="chapter-item expanded affix "><li class="part-title">Troubleshooting</li><li class="chapter-item expanded "><a href="Depth.html"><strong aria-hidden="true">11.</strong> Depth Issue</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -147,6 +147,11 @@
 <h2 id="homing-the-machine"><a class="header" href="#homing-the-machine">Homing the machine</a></h2>
 <p>Press the &quot;Homing&quot; button at the top right of Gladius to home the machine. The machine should start moving to it's home position. 
 <img src="images/homing.png" alt="image" /></p>
+<h2 id="moving-the-machine"><a class="header" href="#moving-the-machine">Moving the machine</a></h2>
+<p>On the right hand side of Gladius there is a box called &quot;Axes&quot;. There are button called &quot;Y+&quot;, &quot;X+&quot;, &quot;Z+&quot; etc. These buttons are used to move the machine around. To change the distance it moves click on the button next to &quot;Z0&quot; (default will be &quot;0.001mm&quot;). It will bring a drop down menu with a list of diffent move steps.</p>
+<p><img src="images/move.png" alt="image" /></p>
+<p>Another way to move the machine is to use the keyboard. To enable this click on the keyboard picture button next to &quot;MDI&quot;. See picture below.</p>
+<p><img src="images/key.png" alt="image" /></p>
 
                     </main>
 
@@ -154,6 +159,9 @@
                         <!-- Mobile navigation buttons -->
                             <a rel="prev" href="UserInterface.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="MachineRun.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
                     </nav>
@@ -163,6 +171,9 @@
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                     <a rel="prev" href="UserInterface.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="MachineRun.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 

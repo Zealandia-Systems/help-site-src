@@ -1,0 +1,1 @@
+Alrighty!   So I’ve figured out what the random depth issue was… I hadn’t cleaned the machine / travel oil off the collet - so the bit was gradually wandering down while machining.   Cleaned in turps, and I’ve just had a perfect cut.    Stupid mistake but I’m stoked it’s sorted.

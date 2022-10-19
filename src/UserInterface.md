@@ -1,22 +1,22 @@
 # User Interface
 
 ## Layout of the Application
-![image](images/GladiusUIdraft.jpg)
+![image](images/GladiusUI.png)
 
 ### Controller Console
-Something here
+When connected this shows a terminal box of the controller. This can be used to see status and input Gcode commands. 
 
 ### Camera Interface
-Something here
+This is the camera interface where you can input a camera from the PC.
 
-### Gcode Visualiser
-Something here
+### Gcode Viewer
+For viewing imported Gcode 0 can also view Gcode path 
 
 ### Menu selection and connection status
-Something here
+This is where quick buttons such as connection and machine homing
 
-### Machine coordinates
-Something here
+### Machine coordinates and movement
+Workspace coordinates and machine movement buttons here
 
-### Machine other infor
-Something here
+### Machine Widgets
+Extra machine properties such as probing, spindle, laser, etc
