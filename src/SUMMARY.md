@@ -21,6 +21,8 @@
     - [Probe Widget](ProbeWidget.md)
     - [Spindle Widget](SpindleWidget.md)
     - [Macros]()
+- [Keyboard Shortcuts](Keyboard.md)
+- [Tool Change](ToolChange.md)
 
 # Advanced Functions
 - [Gcode Commands](GcodeCommands.md)
@@ -28,5 +30,7 @@
 - [Automatic Tool Changer Operation]()
 - [Configuration Settings](ConfigSet.md)
 
-# Troubleshooting
-- [Depth Issue](Depth.md)
+# Support
+- [Troubleshooting](Troubleshooting.md)
+    - [Depth Issue](Depth.md)
+- [Contact us](Contact.md)

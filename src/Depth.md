@@ -1,1 +1,3 @@
-Alrighty!   So I’ve figured out what the random depth issue was… I hadn’t cleaned the machine / travel oil off the collet - so the bit was gradually wandering down while machining.   Cleaned in turps, and I’ve just had a perfect cut.    Stupid mistake but I’m stoked it’s sorted.
+# Depth Issue
+
+If you are having random depth issue make sure to clean the machine/ travel oil off the collect. Becuase of this the tool can move during a cut which can cause random depth cut issues. If you are having issue please [contact us](Contact.md) for help.
