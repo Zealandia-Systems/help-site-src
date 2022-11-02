@@ -3,7 +3,7 @@
 [Introduction](README.md)
 
 # Getting Started
-- [Installation](Installation.md)
+- [Installation](install.md)
 - [User Interface](UserInterface.md)
 - [Machine Startup](MachineStart.md)
 - [Machine Run](MachineRun.md)
