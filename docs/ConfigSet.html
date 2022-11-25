@@ -185,24 +185,22 @@ M213 X1330 Y2630 Z0
 <h2 id="enabling-automatic-tool-changer-function"><a class="header" href="#enabling-automatic-tool-changer-function">Enabling Automatic Tool Changer Function</a></h2>
 <pre><code>M2000 O2 ?/tooling &gt;{&quot;automatic&quot;:true}
 </code></pre>
-<h2 id="selecting-installed-vfd"><a class="header" href="#selecting-installed-vfd">Selecting Installed VFD</a></h2>
-<pre><code>1.5kw:
-
-M2000 O0 ?/tooling/drivers/0 &gt;{&quot;index&quot;:0,&quot;type&quot;:0}
-
-M2000 O0 ?/tooling/driverParameters/0 &gt;{&quot;index&quot;:0,&quot;driver&quot;:0,&quot;id&quot;:10,&quot;value&quot;:18000}
-
-
-2.2kw:
-
-M2000 O0 ?/tooling/drivers/0 &gt;{&quot;index&quot;:0,&quot;type&quot;:0}
-
-M2000 O0 ?/tooling/driverParameters/0 &gt;{&quot;index&quot;:0,&quot;driver&quot;:0,&quot;id&quot;:10,&quot;value&quot;:18000}
-
-
-6kw:
-
-[fix]</code></pre>
+<h2 id="configuring-vfd-and-spindle"><a class="header" href="#configuring-vfd-and-spindle">Configuring VFD and Spindle</a></h2>
+<p>Changzou H100</p>
+<pre><code>M2000 O0 ?/tooling/drivers/0 &gt;{&quot;index&quot;:0,&quot;type&quot;:0}
+</code></pre>
+<p>Fuling DZB</p>
+<pre><code>M2000 O0 ?/tooling/drivers/0 &gt;{&quot;index&quot;:0,&quot;type&quot;:1}
+</code></pre>
+<p>as well as the maximum rpm supported by the spindle:</p>
+<p>18000 RPM</p>
+<pre><code>M2000 O0 ?/tooling/driverParameters/0 &gt;{&quot;index&quot;:0,&quot;driver&quot;:0,&quot;id&quot;:10,&quot;value&quot;:18000}
+</code></pre>
+<p>24000 RPM</p>
+<pre><code>M2000 O0 ?/tooling/driverParameters/0 &gt;{&quot;index&quot;:0,&quot;driver&quot;:0,&quot;id&quot;:10,&quot;value&quot;:24000}
+</code></pre>
+<p>and, if the spindle has an electric fan, you will need to enable it:</p>
+<pre><code>M2000 O0 ?/tooling/driverParameters/1 &gt;{&quot;index&quot;:0,&quot;driver&quot;:0,&quot;id&quot;:11,&quot;value&quot;:&quot;true&quot;}</code></pre>
 
                     </main>
 
