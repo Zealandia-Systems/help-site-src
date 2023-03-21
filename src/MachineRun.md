@@ -1,25 +1,14 @@
 # Machine Run
 
-Before running up the machine we reccomend you follow the startup procedure and spindle warm up below.
-
-## Startup Procedure
-    Turn on your Machine at the controller
-    Make sure the USB is connected to the Computer
-    Connect to your machine through Gladius
-    Home the machine
-    Run a tool change to set machine work co-ordinates
-    Run the XYZ Probe, or manually set work coordinates
-    Press X0Y0 and Z0 to move the machine to work coordinate origin to verify position.
-    Ready to go! Run your GCode
-
-## Spindle Warmup
-The warm up should be performed before use to increase the longevity of your machine. Each stage should be held for 120 seconds (two minutes). Macro link [here]
-
-    7,500 RPM
-    9,000 RPM
-    11,500 RPM
-    15,000 RPM
-    18,000 RPM
 
 
+## Moving the machine
+
+On the right hand side of Gladius there is a box called "Axes". There are button called "Y+", "X+", "Z+" etc. These buttons are used to move the machine around. To change the distance it moves click on the button next to "Z0" (default will be "0.001mm"). It will bring a drop down menu with a list of diffent move steps.
+
+![image](images/move.png)
+
+Another way to move the machine is to use the keyboard. To enable this click on the keyboard picture button next to "MDI". See picture below.
+
+![image](images/key.png)
 
