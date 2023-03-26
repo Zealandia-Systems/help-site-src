@@ -46,7 +46,7 @@ Move the spindle directly above the tool probe, before running the following g-c
 
     M212 X0 Y0 Z-150
 
-    M213 X1330 Y930 Z0
+    M213 X1330 Y730 Z0
 
     ### P3 Workspace
 
