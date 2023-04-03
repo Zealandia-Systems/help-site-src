@@ -63,15 +63,23 @@ Move the spindle directly above the tool probe, before running the following g-c
 ## Enabling Automatic Tool Changer Function
     M2000 O2 ?/tooling >{"automatic":true}
 
+## Configuring Spindle Cooling Fan Control
+
+    M2000 O0 ?/tooling/driverParameters/1 >{"driver":0,"id":11,"value":"true"}
+
 ## Configuring VFD and Spindle
 
 Changzou H100
 
-    M2000 O0 ?/tooling/drivers/0 >{"index":0,"type":0}
+    M2000 O0 ?/tooling/drivers/0 >{"type":0}
 
 Fuling DZB
 
-    M2000 O0 ?/tooling/drivers/0 >{"index":0,"type":1}
+    M2000 O0 ?/tooling/drivers/0 >{"type":1}
+
+Folinn H1
+
+    M2000 O0 ?/tooling/drivers/0 >{"type":4}
 
 as well as the maximum rpm supported by the spindle:
 
@@ -83,6 +91,3 @@ as well as the maximum rpm supported by the spindle:
     
     M2000 O0 ?/tooling/driverParameters/0 >{"index":0,"driver":0,"id":10,"value":24000}
 
-and, if the spindle has an electric fan, you will need to enable it:
-    
-    M2000 O0 ?/tooling/driverParameters/1 >{"index":0,"driver":0,"id":11,"value":"true"}

@@ -1,10 +1,14 @@
 # Machine Startup
+    
+    Turn on your Machine at the controller
+
+    Make sure the USB is connected to the Computer
 
 ## Connecting to the machine
 
 1. Open Gladius
-1. Click on the blue button "Disconnected" at the top right of Gladius. It will show a drop down menu.
-1. Select the com port that is connected to controller and hit "Open"
+2. Click on the blue button "Disconnected" at the top right of Gladius. It will show a drop down menu.
+3. Select the com port that is connected to controller and hit "Open"
 
 ![image](images/GladiusConnect.png)
 
@@ -19,21 +23,15 @@ Press the "Homing" button at the top right of Gladius to home the machine. The m
 Before running up the machine we reccomend you follow the startup procedure and spindle warm up below.
 
 ## Startup Procedure
-    Turn on your Machine at the controller
-    Make sure the USB is connected to the Computer
-    Connect to your machine through Gladius
-    Home the machine
+    
     Run a tool change to set machine work co-ordinates
-    Run the XYZ Probe, or manually set work coordinates
-    Press X0Y0 and Z0 to move the machine to work coordinate origin to verify position.
-    Ready to go! Run your GCode
+    
+### Spindle Warmup
 
-## Spindle Warmup
-The warm up should be performed before use to increase the longevity of your machine. Each stage should be held for 120 seconds (two minutes). Macro link [here]
+The warm up should be performed before use to increase the longevity of your machine. Each stage should be held for 120 seconds (two minutes).
 
     7,500 RPM
     9,000 RPM
     11,500 RPM
     15,000 RPM
     18,000 RPM
-
