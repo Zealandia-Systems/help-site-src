@@ -23,6 +23,7 @@ const sidebars = {
 		'Quick Start/User Interface',
 		'Quick Start/Machine Startup',
 		'Quick Start/Moving the Machine',
+		'Quick Start/Setting Zero',
 		'Quick Start/Running GCode',
 			],
 			
