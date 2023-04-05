@@ -14,20 +14,21 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
 	// By default, Docusaurus generates a sidebar from the docs folder structure
-	helpSidebar: [
-		'Gladius/Introduction',
-		{
-			type: 'category',
-			label: 'Getting Started',
-			items: [
-				'Gladius/Getting Started/Installation',
-				'Gladius/Getting Started/User Interface',
-				'Gladius/Getting Started/Machine Startup',
-				'Gladius/Getting Started/Moving the Machine',
-				'Gladius/Getting Started/Running GCode'
+
+	quickstartSidebar: [
+		'Quick Start/Introduction',
+		'Quick Start/Read Before Operating',
+		'Quick Start/Unattended Operation',
+		'Quick Start/Installation',
+		'Quick Start/User Interface',
+		'Quick Start/Machine Startup',
+		'Quick Start/Moving the Machine',
+		'Quick Start/Running GCode',
 			],
-		},
-		{
+			
+	gladiusSidebar: [
+		'Gladius/Introduction',
+				{
 			type: 'category',
 			label: 'User Guide',
 			items: [
@@ -59,7 +60,36 @@ const sidebars = {
 
 	],
 
+	proteusSidebar: [
+		'Proteus/Introduction',
+		{
+			type: 'category',
+			label: 'Maintenance',
+			items: [						
+						'Proteus/Maintenance/Checklist',
+						'Proteus/Maintenance/Scheduled Maintenance Programs/Scheduled Maintenance Programs',
+						'Proteus/Maintenance/Hardware/Hardware',
+						'Proteus/Maintenance/Software/Software',
+						'Proteus/Maintenance/Spindle/Spindle',
+						'Proteus/Maintenance/Air and Coolant/Air and Coolant',
+						'Proteus/Maintenance/3D Probe System/3D Probe System',
+						'Proteus/Maintenance/Tool Offset Probe/Tool Offset Probe',
+					]
+		}
+	],
 
+	
+	swordfishSidebar: [
+		'Swordfish/Introduction',
+		{
+			type: 'category',
+			label: 'Controller Overview',
+			items: [
+				'Swordfish/Docs/Documentation',
+		]
+		},
+
+	],
 	// But you can create a sidebar manually
 	/*
 	tutorialSidebar: [

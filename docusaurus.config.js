@@ -64,11 +64,28 @@ const config = {
 				items: [
 					{
 						type: 'docSidebar',
-						sidebarId: 'helpSidebar',
+						sidebarId: 'quickstartSidebar',
 						position: 'left',
-						label: 'Help',
+						label: 'Quick Start',
 					},
-
+					{
+						type: 'docSidebar',
+						sidebarId: 'gladiusSidebar',
+						position: 'left',
+						label: 'Gladius',
+					},
+					{
+						type: 'docSidebar',
+						sidebarId: 'proteusSidebar',
+						position: 'left',
+						label: 'Proteus',
+					},
+					{
+						type: 'docSidebar',
+						sidebarId: 'swordfishSidebar',
+						position: 'left',
+						label: 'Swordfish',
+					},
 				],
 			},
 			footer: {
@@ -90,6 +107,7 @@ const config = {
 				theme: lightCodeTheme,
 				darkTheme: darkCodeTheme,
 			},
+			metadata: [{name: 'keywords', content: 'Zealandia, Zelandia, Zealandia Systems, Proteus, CNC, Help, Docs'}],
 		}),
 };
 
