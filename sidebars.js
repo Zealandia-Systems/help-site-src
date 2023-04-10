@@ -87,6 +87,9 @@ const sidebars = {
 			label: 'Controller Overview',
 			items: [
 				'Swordfish/Docs/Documentation',
+				'Swordfish/Docs/Supported M Codes',
+				'Swordfish/Docs/Supported G Codes',
+				'Swordfish/Docs/CAM Post Processors',
 		]
 		},
 
