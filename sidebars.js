@@ -76,7 +76,7 @@ const sidebars = {
 						'Proteus/Maintenance/3D Probe System/3D Probe System',
 						'Proteus/Maintenance/Tool Offset Probe/Tool Offset Probe',
 					]
-		}
+		},
 		{
 			type: 'category',
 			label: 'Maintenance',
