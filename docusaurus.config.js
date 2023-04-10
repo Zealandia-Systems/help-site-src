@@ -86,6 +86,12 @@ const config = {
 						position: 'left',
 						label: 'Swordfish',
 					},
+					{
+						type: 'docSidebar',
+						sidebarId: 'technicalSidebar',
+						position: 'left',
+						label: 'Technical',
+					},
 				],
 			},
 			footer: {

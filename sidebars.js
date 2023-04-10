@@ -91,6 +91,20 @@ const sidebars = {
 		},
 
 	],
+
+	technicalSidebar: [
+		'Technical/Introduction',
+		{
+			type: 'category',
+			label: 'Controller Overview',
+			items: [
+				'Technical/Wiring/Wiring Overview',
+		]
+		},
+
+	],
+
+
 	// But you can create a sidebar manually
 	/*
 	tutorialSidebar: [
