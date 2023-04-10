@@ -65,6 +65,20 @@ const sidebars = {
 		'Proteus/Introduction',
 		{
 			type: 'category',
+			label: 'Machine Requirements',
+			items: [						
+						'Proteus/Maintenance/Checklist',
+						'Proteus/Maintenance/Scheduled Maintenance Programs/Scheduled Maintenance Programs',
+						'Proteus/Maintenance/Hardware/Hardware',
+						'Proteus/Maintenance/Software/Software',
+						'Proteus/Maintenance/Spindle/Spindle',
+						'Proteus/Maintenance/Air and Coolant/Air and Coolant',
+						'Proteus/Maintenance/3D Probe System/3D Probe System',
+						'Proteus/Maintenance/Tool Offset Probe/Tool Offset Probe',
+					]
+		}
+		{
+			type: 'category',
 			label: 'Maintenance',
 			items: [						
 						'Proteus/Maintenance/Checklist',
@@ -99,7 +113,7 @@ const sidebars = {
 		'Technical/Introduction',
 		{
 			type: 'category',
-			label: 'Controller Overview',
+			label: 'Test',
 			items: [
 				'Technical/Wiring/Wiring Overview',
 		]
