@@ -67,14 +67,7 @@ const sidebars = {
 			type: 'category',
 			label: 'Machine Requirements',
 			items: [						
-						'Proteus/Maintenance/Checklist',
-						'Proteus/Maintenance/Scheduled Maintenance Programs/Scheduled Maintenance Programs',
-						'Proteus/Maintenance/Hardware/Hardware',
-						'Proteus/Maintenance/Software/Software',
-						'Proteus/Maintenance/Spindle/Spindle',
-						'Proteus/Maintenance/Air and Coolant/Air and Coolant',
-						'Proteus/Maintenance/3D Probe System/3D Probe System',
-						'Proteus/Maintenance/Tool Offset Probe/Tool Offset Probe',
+						'Proteus/Machine Requirements/Air Supply',
 					]
 		},
 		{
@@ -113,14 +106,40 @@ const sidebars = {
 		'Technical/Introduction',
 		{
 			type: 'category',
-			label: 'Test',
+			label: 'Electrical',
 			items: [
 				'Technical/Wiring/Wiring Overview',
+				'Technical/Wiring/Motor Drivers',
 		]
 		},
 
 	],
 
+	marsSidebar: [
+		'Technical/Introduction',
+		{
+			type: 'category',
+			label: 'Mars',
+			items: [
+				'Technical/Wiring/Wiring Overview',
+				'Technical/Wiring/Motor Drivers',
+		]
+		},
+
+	],
+
+	dionysusSidebar: [
+		'Technical/Introduction',
+		{
+			type: 'category',
+			label: 'Dionysus',
+			items: [
+				'Technical/Wiring/Wiring Overview',
+				'Technical/Wiring/Motor Drivers',
+		]
+		},
+
+	],	
 
 	// But you can create a sidebar manually
 	/*

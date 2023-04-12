@@ -88,6 +88,18 @@ const config = {
 					},
 					{
 						type: 'docSidebar',
+						sidebarId: 'marsSidebar',
+						position: 'left',
+						label: 'Mars',
+					},
+					{
+						type: 'docSidebar',
+						sidebarId: 'dionysusSidebar',
+						position: 'left',
+						label: 'Dionysus',
+					},
+					{
+						type: 'docSidebar',
 						sidebarId: 'technicalSidebar',
 						position: 'left',
 						label: 'Technical',
