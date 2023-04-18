@@ -25,11 +25,11 @@ const sidebars = {
 		'Quick Start/Moving the Machine',
 		'Quick Start/Setting Zero',
 		'Quick Start/Running GCode',
-			],
-			
+	],
+
 	gladiusSidebar: [
 		'Gladius/Introduction',
-				{
+		{
 			type: 'category',
 			label: 'User Guide',
 			items: [
@@ -66,27 +66,27 @@ const sidebars = {
 		{
 			type: 'category',
 			label: 'Machine Requirements',
-			items: [						
-						'Proteus/Machine Requirements/Air Supply',
-					]
+			items: [
+				'Proteus/Machine Requirements/Air Supply',
+			]
 		},
 		{
 			type: 'category',
 			label: 'Maintenance',
-			items: [						
-						'Proteus/Maintenance/Checklist',
-						'Proteus/Maintenance/Scheduled Maintenance Programs/Scheduled Maintenance Programs',
-						'Proteus/Maintenance/Hardware/Hardware',
-						'Proteus/Maintenance/Software/Software',
-						'Proteus/Maintenance/Spindle/Spindle',
-						'Proteus/Maintenance/Air and Coolant/Air and Coolant',
-						'Proteus/Maintenance/3D Probe System/3D Probe System',
-						'Proteus/Maintenance/Tool Offset Probe/Tool Offset Probe',
-					]
+			items: [
+				'Proteus/Maintenance/Checklist',
+				'Proteus/Maintenance/Scheduled Maintenance Programs/Scheduled Maintenance Programs',
+				'Proteus/Maintenance/Hardware/Hardware',
+				'Proteus/Maintenance/Software/Software',
+				'Proteus/Maintenance/Spindle/Spindle',
+				'Proteus/Maintenance/Air and Coolant/Air and Coolant',
+				'Proteus/Maintenance/3D Probe System/3D Probe System',
+				'Proteus/Maintenance/Tool Offset Probe/Tool Offset Probe',
+			]
 		}
 	],
 
-	
+
 	swordfishSidebar: [
 		'Swordfish/Introduction',
 		{
@@ -97,7 +97,7 @@ const sidebars = {
 				'Swordfish/Docs/Supported M Codes',
 				'Swordfish/Docs/Supported G Codes',
 				'Swordfish/Docs/CAM Post Processors',
-		]
+			]
 		},
 
 	],
@@ -110,12 +110,12 @@ const sidebars = {
 			items: [
 				'Technical/Wiring/Wiring Overview',
 				'Technical/Wiring/Motor Drivers',
-		]
+			]
 		},
 
 	],
 
-	marsSidebar: [
+	/*marsSidebar: [
 		'Technical/Introduction',
 		{
 			type: 'category',
@@ -139,7 +139,7 @@ const sidebars = {
 		]
 		},
 
-	],	
+	],	*/
 
 	// But you can create a sidebar manually
 	/*
