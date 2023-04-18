@@ -49,15 +49,14 @@ const sidebars = {
 				'Gladius/User Guide/Tool Change'
 			]
 		},
-		{
+		/*{
 			type: 'category',
 			label: 'Advanced Functions',
 			link: { type: 'doc', id: 'Gladius/Advanced Functions/Advanced Functions' },
 			items: [
-				'Gladius/Advanced Functions/GCode Commands',
 				'Gladius/Advanced Functions/Configuration Settings'
 			]
-		}
+		}*/
 
 	],
 
@@ -93,7 +92,7 @@ const sidebars = {
 			type: 'category',
 			label: 'Controller Overview',
 			items: [
-				'Swordfish/Docs/Documentation',
+				'Swordfish/Docs/Firmware',
 				'Swordfish/Docs/Supported M Codes',
 				'Swordfish/Docs/Supported G Codes',
 				'Swordfish/Docs/CAM Post Processors',
@@ -110,13 +109,14 @@ const sidebars = {
 			items: [
 				'Technical/Wiring/Wiring Overview',
 				'Technical/Wiring/Motor Drivers',
+				'Technical/VFD Configuration/VFD Configuration'
 		]
 		},
 
 	],
 
 	marsSidebar: [
-		'Technical/Introduction',
+		'Mars/Introduction',
 		{
 			type: 'category',
 			label: 'Mars',
@@ -128,7 +128,7 @@ const sidebars = {
 
 	],
 
-	dionysusSidebar: [
+	/*dionysusSidebar: [
 		'Technical/Introduction',
 		{
 			type: 'category',
@@ -140,6 +140,9 @@ const sidebars = {
 		},
 
 	],	
+	*/ 
+
+
 
 	// But you can create a sidebar manually
 	/*

@@ -70,21 +70,9 @@ const config = {
 					},
 					{
 						type: 'docSidebar',
-						sidebarId: 'gladiusSidebar',
-						position: 'left',
-						label: 'Gladius',
-					},
-					{
-						type: 'docSidebar',
 						sidebarId: 'proteusSidebar',
 						position: 'left',
 						label: 'Proteus',
-					},
-					{
-						type: 'docSidebar',
-						sidebarId: 'swordfishSidebar',
-						position: 'left',
-						label: 'Swordfish',
 					},
 					{
 						type: 'docSidebar',
@@ -94,10 +82,23 @@ const config = {
 					},
 					{
 						type: 'docSidebar',
+						sidebarId: 'gladiusSidebar',
+						position: 'left',
+						label: 'Gladius',
+					},
+					{
+						type: 'docSidebar',
+						sidebarId: 'swordfishSidebar',
+						position: 'left',
+						label: 'Swordfish',
+					},
+					
+					/*{
+						type: 'docSidebar',
 						sidebarId: 'dionysusSidebar',
 						position: 'left',
 						label: 'Dionysus',
-					},
+					},*/
 					{
 						type: 'docSidebar',
 						sidebarId: 'technicalSidebar',
