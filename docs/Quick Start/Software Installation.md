@@ -1,4 +1,4 @@
-# Installation
+# Software Installation
 
 Gladius is free to download from GitHub link [here](https://github.com/Zealandia-Systems/Gladius/releases).
 A Windows PC (Windows 7, 8, 10, 11) is required to use Gladius.
