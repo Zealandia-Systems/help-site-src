@@ -86,7 +86,7 @@ const config = {
 						position: 'left',
 						label: 'Swordfish',
 					},
-					{
+					/*{
 						type: 'docSidebar',
 						sidebarId: 'marsSidebar',
 						position: 'left',
@@ -97,7 +97,7 @@ const config = {
 						sidebarId: 'dionysusSidebar',
 						position: 'left',
 						label: 'Dionysus',
-					},
+					},*/
 					{
 						type: 'docSidebar',
 						sidebarId: 'technicalSidebar',
@@ -125,7 +125,7 @@ const config = {
 				theme: lightCodeTheme,
 				darkTheme: darkCodeTheme,
 			},
-			metadata: [{name: 'keywords', content: 'Zealandia, Zelandia, Zealandia Systems, Proteus, CNC, Help, Docs'}],
+			metadata: [{ name: 'keywords', content: 'Zealandia, Zelandia, Zealandia Systems, Proteus, CNC, Help, Docs' }],
 		}),
 };
 
