@@ -109,23 +109,14 @@ const sidebars = {
 			items: [
 				'Technical/Wiring/Wiring Overview',
 				'Technical/Wiring/Motor Drivers',
-<<<<<<< HEAD
 				'Technical/VFD Configuration/VFD Configuration'
 		]
-=======
-			]
->>>>>>> b6eec4fdabcbd58f77e60bfb00ab4cd45cfd49aa
 		},
 
 	],
 
-<<<<<<< HEAD
 	marsSidebar: [
 		'Mars/Introduction',
-=======
-	/*marsSidebar: [
-		'Technical/Introduction',
->>>>>>> b6eec4fdabcbd58f77e60bfb00ab4cd45cfd49aa
 		{
 			type: 'category',
 			label: 'Mars',
@@ -148,14 +139,10 @@ const sidebars = {
 		]
 		},
 
-<<<<<<< HEAD
 	],	
 	*/ 
 
 
-=======
-	],	*/
->>>>>>> b6eec4fdabcbd58f77e60bfb00ab4cd45cfd49aa
 
 	// But you can create a sidebar manually
 	/*
