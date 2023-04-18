@@ -110,12 +110,12 @@ const sidebars = {
 				'Technical/Wiring/Wiring Overview',
 				'Technical/Wiring/Motor Drivers',
 				'Technical/VFD Configuration/VFD Configuration'
-		]
+			]
 		},
 
 	],
 
-	marsSidebar: [
+	/*marsSidebar: [
 		'Mars/Introduction',
 		{
 			type: 'category',
@@ -126,7 +126,7 @@ const sidebars = {
 		]
 		},
 
-	],
+	],*/
 
 	/*dionysusSidebar: [
 		'Technical/Introduction',
@@ -139,8 +139,8 @@ const sidebars = {
 		]
 		},
 
-	],	
-	*/ 
+	],
+	*/
 
 
 

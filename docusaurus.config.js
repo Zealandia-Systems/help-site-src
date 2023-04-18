@@ -74,12 +74,12 @@ const config = {
 						position: 'left',
 						label: 'Proteus',
 					},
-					{
+					/*{
 						type: 'docSidebar',
 						sidebarId: 'marsSidebar',
 						position: 'left',
 						label: 'Mars',
-					},
+					},*/
 					{
 						type: 'docSidebar',
 						sidebarId: 'gladiusSidebar',
@@ -92,7 +92,7 @@ const config = {
 						position: 'left',
 						label: 'Swordfish',
 					},
-					
+
 					/*{
 						type: 'docSidebar',
 						sidebarId: 'dionysusSidebar',
