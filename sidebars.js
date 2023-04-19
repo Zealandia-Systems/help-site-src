@@ -26,6 +26,7 @@ const sidebars = {
 		'Quick Start/Moving the Machine',
 		'Quick Start/Setting Zero',
 		'Quick Start/Running GCode',
+		'Quick Start/Troubleshooting',
 	],
 
 	gladiusSidebar: [
@@ -110,7 +111,15 @@ const sidebars = {
 			items: [
 				'Technical/Wiring/Wiring Overview',
 				'Technical/Wiring/Motor Drivers',
-				'Technical/VFD Configuration/VFD Configuration'
+				'Technical/Wiring/Spindle Connections',
+				'Technical/VFD Configuration/VFD Configuration',
+			]
+		},
+		{
+			type: 'category',
+			label: 'Pneumatics',
+			items: [
+				'Technical/Air/Spindle Pneumatics',
 			]
 		},
 
