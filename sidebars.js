@@ -69,6 +69,7 @@ const sidebars = {
 			label: 'Machine Requirements',
 			items: [
 				'Proteus/Machine Requirements/Air Supply',
+				'Proteus/Machine Requirements/Machine Footprint',
 			]
 		},
 		{
