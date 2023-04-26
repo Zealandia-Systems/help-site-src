@@ -16,18 +16,18 @@ Latest firmware [here](https://github.com/Zealandia-Systems/Swordfish/releases)
 
 ## Explanation of JSON string format
 
-M2000 is the Mcode for accessing the settings
+*   M2000 is the Mcode for accessing the settings
 
-O[function] is used for whether you are Creating a record, Reading, Updating or Deleting. Easily remembered by using the pnumonic, "CRUD"
+*   O[function] is used for whether you are Creating a record, Reading, Updating or Deleting. Easily remembered by using the pnumonic, "CRUD"
 
 O0 = Create
 O1 = Read
 O2 = Update
 O3 = Delete
 
-?/[file directory]  is where the record is you wish to locate.
+*   ?/[file directory]  is where the record is you wish to locate.
 
->{[command]}  is the function/command you with to perform
+ *  >{[command]}  is the function/command you with to perform
 
 ## Enabling Automatic Tool Changer Function
     M2000 O2 ?/tooling >{"automatic":true}
