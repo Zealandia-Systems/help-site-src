@@ -13,48 +13,21 @@ Latest firmware [here](https://github.com/Zealandia-Systems/Swordfish/releases)
 ![image](images/Firmware.png)
 
 
-## Tool Offset Probe Calibration
-For a brand new machine you will need to calibrate the tool probe.
 
-Before calibrating the G59.9 (tool probe) WCS, you should install a tool into the spindle, sticking out roughly 35mm.
+## Explanation of JSON string format
 
-Move the spindle directly above the tool probe, before running the following g-code. (ATC machines will need to turn off soft limits)
+M2000 is the Mcode for accessing the settings
 
-     G49   //clear offset
+O[function] is used for whether you are Creating a record, Reading, Updating or Deleting. Easily remembered by using the pnumonic, "CRUD"
 
-     G59.9 //selecting tool probe WCS P60
+O0 = Create
+O1 = Read
+O2 = Update
+O3 = Delete
 
-     G37 //run probe
+?/[file directory]  is where the record is you wish to locate.
 
-     G10 L20 P60 X0 Y0 // set coordinates
-
-     M500 //save
-
-     G54.0 / change back into another WCS
-
-**IMPORTANT!! Run a tool change after calibration to make sure the correct tool height is set, as the calibration steps do not do this!**
-
- Video [here](https://youtu.be/LnDZ8_u_FLo) on how it functions once its calibrated. Get a 6mm drill bit or one of your new tools, measure it with some calipers as you will need it for the calibration.
-
- ## Setting Workspace Limits
- You will need to make sure limits are set:
- ### P2 Workspace
-
-    M212 X0 Y0 Z-150
-
-    M213 X1330 Y930 Z0
-
-### P3 Workspace
-
-    M212 X0 Y0 Z-150
-
-    M213 X1330 Y1330 Z0
-
-### P4 Workspace
-
-    M212 X0 Y0 Z-150
-
-    M213 X1330 Y2630 Z0
+>{[command]}  is the function/command you with to perform
 
 ## Enabling Automatic Tool Changer Function
     M2000 O2 ?/tooling >{"automatic":true}
@@ -77,12 +50,20 @@ as well as the maximum rpm supported by the spindle:
 
 ### 18000 RPM
 
-    M2000 O0 ?/tooling/driverParameters/0 >{"index":0,"driver":0,"id":10,"value":18000}
+    M2000 O0 ?/tooling/driverParameters/0 >{"driver":0,"id":10,"value":18000}
 
 ### 24000 RPM
 
-    M2000 O0 ?/tooling/driverParameters/0 >{"index":0,"driver":0,"id":10,"value":24000}
+    M2000 O0 ?/tooling/driverParameters/0 >{"driver":0,"id":10,"value":24000}
+
+### 60000 RPM
+
+    M2000 O0 ?/tooling/driverParameters/0 >{"driver":0,"id":10,"value":60000}
 
 ## Enable electric fan control
 
-    M2000 O0 ?/tooling/driverParameters/1 >{"index":0,"driver":0,"id":11,"value":"true"}
+    M2000 O0 ?/tooling/driverParameters/1 >{"driver":0,"id":11,"value":"true"}
+
+## Enable ATC Dust Shoe
+
+    M2000 O2 ?/tooling >{"hasATCDustShoe":"true"}

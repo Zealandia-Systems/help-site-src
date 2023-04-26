@@ -96,9 +96,11 @@ const sidebars = {
 			label: 'Controller Overview',
 			items: [
 				'Swordfish/Docs/Firmware',
+				'Swordfish/Docs/Workspace Settings',
 				'Swordfish/Docs/Supported M Codes',
 				'Swordfish/Docs/Supported G Codes',
 				'Swordfish/Docs/CAM Post Processors',
+				'Swordfish/Docs/Tool Setter Probe Calibration',
 			]
 		},
 
