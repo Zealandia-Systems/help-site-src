@@ -42,9 +42,17 @@ O3 = Delete
 
     M2000 O0 ?/tooling/drivers/0 >{"type":1}
 
-### Fuling H1
+### Laser PWM Setup
+
+    M2000 O0 ?/tooling/drivers/1 >{"type":2}
+
+### CT100
 
     M2000 O0 ?/tooling/drivers/0 >{"type":3}   
+
+### Fuling H1
+
+    M2000 O0 ?/tooling/drivers/0 >{"type":4}     
 
 as well as the maximum rpm supported by the spindle:
 
