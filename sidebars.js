@@ -111,6 +111,7 @@ const sidebars = {
 			label: 'Electrical',
 			items: [
 				'Technical/Wiring/Wiring Overview',
+				'Technical/Wiring/Pneumatic Loom',
 				'Technical/Wiring/Motor Drivers',
 				'Technical/Wiring/Spindle Connections',
 				'Technical/VFD Configuration/VFD Configuration',
