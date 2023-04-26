@@ -113,22 +113,37 @@ Computers, and especially ours, are extemely fast, incredibly accurate but insan
 ### Spindle not turning on or off
 
     SYMPTOMS:
+    Error message "TIMED OUT WAITING FOR SPINDLE"
 
     DIAGNOSIS:
+    Error Message blinking on the VFD Screen.
+    VFD Toggles Error state when E-Stop is pushed, and does not reset.
 
     SOLUTIONS:
+    Press the RED "Stop" button on the VFD to clear and reset the VFD
+    Known bug on earlier firmware to not clear the error state on VFD before restarting, after E-stop, pertaining to DZB312 VFDs. Update to most recent firmware and confirm if bug persists.
+
+
 
 ### Limit Exception
 
     SYMPTOMS:
 
+    Machine stops before or during a cut operation
+
     DIAGNOSIS:
+    "ERROR - Limit Exception" thrown in Console Window relating to X,Y or Z axis.
 
     SOLUTIONS:
+    READ YOUR GCODE
+    This error is thrown when the program being run is trying to force the machine outside its work envelope.  While the immediate cut will be inside the machine working envelope, the read ahead of the GCode in machine's buffer will cause it to stop.  
+    You will need to change where your workpiece is being zeroed from.  
+    If the error pertains to a Z Axis limit, you may find your cutting too low.  Either poke your tool out further, or lift the material up higher on a waste board.
+
 
 ### Machine Stalling
 
-This issue is typical of the Y (long) axis on P4, when some dirt and debris gets onto the motion system.
+This issue is typical of the Y (long) axis on P4, and typically presents when some dirt and debris gets onto the motion system.
 
     SYMPTOMS:  
     A grinding and a binding noise, followed by the toolhead moving to the wrong spot
@@ -152,7 +167,7 @@ Grease should be a high-speed lithium grease.  Also known as an EP2 or EP3 greas
 GREASE IS CHEAP!  Bearings and down time are not!   Go wild with the grease, it'll spit out what it doesn't want.
 
 
-### Tool Change not Functioning (Non-ATC Variants)
+### Tool Change not Functioning Correctly (Non-ATC Variants)
 
     SYMPTOMS:
 
@@ -161,7 +176,7 @@ GREASE IS CHEAP!  Bearings and down time are not!   Go wild with the grease, it'
     SOLUTIONS:
 
 
-### Tool Change not Functioning (ATC Variants)
+### Tool Change not Functioning Correctly (ATC Variants)
 
     SYMPTOMS:
 
@@ -169,10 +184,17 @@ GREASE IS CHEAP!  Bearings and down time are not!   Go wild with the grease, it'
 
     SOLUTIONS:
 
-### Tool Height Incorrect after Tool Change
+### Tool Height Incorrect after Tool Change Operation
 
     SYMPTOMS:
+    Z not cutting at correct depth, either too high or too low
 
     DIAGNOSIS:
+    After probing and setting WCS with one tool, the first operation will run at correct height then after a tool change, manual or automatic, the second operation is no longer operating at the expected heights. 
 
     SOLUTIONS:
+    The first tool was not probed correctly, or the tool geometry has meant it has probed off the wrong part of the tool.  
+
+    For example, Typical of woodworking tools to have spurs on the end to guide, this can offset tool lengths on automatic probing cycles and cause holes to be shallow.
+
+    Not probing tools before setting work offsets means the machine loses where it thinks the tool tip is, and still thinks the previous tool and that tools' corresponding offset is still valid! This means that when it changes tools, it applies any distance changes incorrectly and throws out the Z heights.
