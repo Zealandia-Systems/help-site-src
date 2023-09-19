@@ -20,11 +20,12 @@ jobs:
 
           git clone https://user:$GITHUB_TOKEN@github.com/Zealandia-Systems/help-site.git # This works
 
+          ls
+
           cd help-site
+          
+          ls
 
-          git checkout main
-
-          rm -rf ./
           cp -r ../build ./
 
           git add ./
