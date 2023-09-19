@@ -9,5 +9,5 @@ jobs:
           npm install
       - run: |
           npm run build
-        run: |
+      - run: |
           ls ${{ github.workspace.build }}
