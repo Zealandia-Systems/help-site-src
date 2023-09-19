@@ -11,8 +11,6 @@ jobs:
           npm install
       - run: |
           npm run build
-      - run: |
-          ls build
       - name: Generate API module
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -30,5 +28,8 @@ jobs:
 
           git add ./
           git commit -m"pipeline push"
+
+          git config --global user.email "lachlan.alsop@gmail.com"
+          git config --global user.name "Lachlan Alsop Pipeline"
 
           git push
