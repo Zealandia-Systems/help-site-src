@@ -34,5 +34,5 @@ jobs:
           
       - name: Commit to other repo
         run: |
-
+          cd help-site
           git push
