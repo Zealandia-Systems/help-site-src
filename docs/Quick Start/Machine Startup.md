@@ -24,7 +24,7 @@ Before running up the machine we reccomend you follow the startup procedure and 
 ### Homing the machine
 
 Press the "Homing" button at the top right of Gladius to home the machine. The machine should start moving to it's home position.
-![image](images/homing.png)
+![image](images/Homing.png)
 
 
 
