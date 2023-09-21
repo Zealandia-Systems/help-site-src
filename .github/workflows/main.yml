@@ -15,21 +15,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          git checkout LEAVE-ALONE-DEPLOY
 
-          git clone https://github.com/Zealandia-Systems/help-site.git
-
-          cd help-site
-
-          cp -r ../build ./
-
-          git config --global user.email "lachlan.alsop@gmail.com"
-          git config --global user.name "Lachlan Alsop Pipeline"
+          cp -r --remove-destination ../build ./
 
           git add ./
           git commit -m"pipeline push"
-          
-      - name: Commit to other repo
-        run: |
-
-          cd help-site
-          git push
