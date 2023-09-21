@@ -20,6 +20,9 @@ jobs:
 
           find ./ -mindepth 1 -type d \( ! -path './build*' -a ! -path './.git*' \) -exec rm -r {} + || true
           mv ./build/* ./
+          
+          git config --global user.email "lachlan@zealandia.systems"
+          git config --global user.name "Lachlan Alsop"
 
           git add ./
           git commit -m"pipeline push"
