@@ -18,7 +18,7 @@ jobs:
           git pull
           git checkout LEAVE-ALONE-DEPLOY
 
-          find ./ -mindepth 1 -type d \( ! -path './build*' -a ! -path './.git*' \) -exec rm -r {} + || true
+          find ./ -mindepth 1 ! -regex '^./build\(/.*\)?' ! -regex '^./.git\(/.*\)?' -delete || true
           mv ./build/* ./
           
           git config --global user.email "lachlan@zealandia.systems"
