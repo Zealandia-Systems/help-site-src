@@ -16,13 +16,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
 
-          git clone https://user:$GITHUB_TOKEN@github.com/Zealandia-Systems/help-site.git # This works
-
-          ls
+          git clone https://github.com/Zealandia-Systems/help-site.git
 
           cd help-site
-          
-          ls
 
           cp -r ../build ./
 
@@ -34,5 +30,6 @@ jobs:
           
       - name: Commit to other repo
         run: |
+
           cd help-site
           git push
