@@ -1,0 +1,26 @@
+{
+  "logo.alt": {
+    "message": "Zealandia Systems",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Quick Start": {
+    "message": "Quick Start",
+    "description": "Navbar item with label Quick Start"
+  },
+  "item.label.Proteus": {
+    "message": "Proteus",
+    "description": "Navbar item with label Proteus"
+  },
+  "item.label.Gladius": {
+    "message": "Gladius",
+    "description": "Navbar item with label Gladius"
+  },
+  "item.label.Swordfish": {
+    "message": "Swordfish",
+    "description": "Navbar item with label Swordfish"
+  },
+  "item.label.Technical": {
+    "message": "Technical",
+    "description": "Navbar item with label Technical"
+  }
+}

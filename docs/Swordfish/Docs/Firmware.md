@@ -20,10 +20,10 @@ Latest firmware [here](https://github.com/Zealandia-Systems/Swordfish/releases)
 
 *   O[function] is used for whether you are Creating a record, Reading, Updating or Deleting. Easily remembered by using the pnumonic, "CRUD"
 
-O0 = Create
-O1 = Read
-O2 = Update
-O3 = Delete
+O0 = Create,
+O1 = Read,
+O2 = Update,
+O3 = Delete,
 
 *   ?/[file directory]  is where the record is you wish to locate.
 
@@ -42,9 +42,17 @@ O3 = Delete
 
     M2000 O0 ?/tooling/drivers/0 >{"type":1}
 
-### Fuling H1
+### Laser PWM Setup
+
+    M2000 O0 ?/tooling/drivers/1 >{"type":2}
+
+### CT100
 
     M2000 O0 ?/tooling/drivers/0 >{"type":4}
+
+### Fuling H1
+
+    M2000 O0 ?/tooling/drivers/0 >{"type":4}     
 
 as well as the maximum rpm supported by the spindle:
 
@@ -59,6 +67,8 @@ as well as the maximum rpm supported by the spindle:
 ### 60000 RPM
 
     M2000 O0 ?/tooling/driverParameters/0 >{"driver":0,"id":10,"value":60000}
+
+### Laser is automatically scaled 0-100% on M3 
 
 ## Enable electric fan control
 
