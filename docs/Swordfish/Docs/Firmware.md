@@ -44,7 +44,7 @@ O3 = Delete
 
 ### Fuling H1
 
-    M2000 O0 ?/tooling/drivers/0 >{"type":3}   
+    M2000 O0 ?/tooling/drivers/0 >{"type":4}
 
 as well as the maximum rpm supported by the spindle:
 
