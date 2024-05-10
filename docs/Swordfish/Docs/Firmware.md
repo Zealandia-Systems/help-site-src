@@ -48,11 +48,11 @@ O3 = Delete,
 
 ### CT100
 
-    M2000 O0 ?/tooling/drivers/0 >{"type":4}
+    M2000 O0 ?/tooling/drivers/0 >{"type":3}
 
 ### Fuling H1
 
-    M2000 O0 ?/tooling/drivers/0 >{"type":4}     
+    M2000 O0 ?/tooling/drivers/0 >{"type":4}
 
 as well as the maximum rpm supported by the spindle:
 
@@ -68,7 +68,7 @@ as well as the maximum rpm supported by the spindle:
 
     M2000 O0 ?/tooling/driverParameters/0 >{"driver":0,"id":10,"value":60000}
 
-### Laser is automatically scaled 0-100% on M3 
+### Laser is automatically scaled 0-100% on M3
 
 ## Enable electric fan control
 
